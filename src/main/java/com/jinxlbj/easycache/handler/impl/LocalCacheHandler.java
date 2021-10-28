@@ -1,6 +1,6 @@
-package handler.impl;
+package com.jinxlbj.easycache.handler.impl;
 
-import handler.CacheHandler;
+import com.jinxlbj.easycache.handler.CacheHandler;
 
 import java.util.LinkedList;
 import java.util.Queue;

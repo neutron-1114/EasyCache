@@ -1,9 +1,9 @@
-package core;
+package com.jinxlbj.easycache.core;
 
-import handler.CacheHandler;
-import handler.impl.LocalCacheHandler;
-import serialization.SerializationHandler;
-import serialization.impl.JavaSourceSerializationHandler;
+import com.jinxlbj.easycache.handler.CacheHandler;
+import com.jinxlbj.easycache.handler.impl.LocalCacheHandler;
+import com.jinxlbj.easycache.serialization.SerializationHandler;
+import com.jinxlbj.easycache.serialization.impl.JavaSourceSerializationHandler;
 
 import java.util.UUID;
 

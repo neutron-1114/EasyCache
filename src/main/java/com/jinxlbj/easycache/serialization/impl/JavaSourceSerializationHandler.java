@@ -1,6 +1,6 @@
-package serialization.impl;
+package com.jinxlbj.easycache.serialization.impl;
 
-import serialization.SerializationHandler;
+import com.jinxlbj.easycache.serialization.SerializationHandler;
 
 import java.io.*;
 

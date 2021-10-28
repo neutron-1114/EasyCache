@@ -1,6 +1,6 @@
-package handler.impl;
+package com.jinxlbj.easycache.handler.impl;
 
-import handler.CacheHandler;
+import com.jinxlbj.easycache.handler.CacheHandler;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;

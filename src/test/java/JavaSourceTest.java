@@ -1,13 +1,6 @@
 import model.TestA;
 import org.junit.Test;
-import serialization.impl.HessianSerializationHandler;
-import serialization.impl.JavaSourceSerializationHandler;
-
-/**
- * @author
- * @date 2021-10-26 18:36
- * @desc
- **/
+import com.jinxlbj.easycache.serialization.impl.JavaSourceSerializationHandler;
 
 public class JavaSourceTest {
 

@@ -1,4 +1,4 @@
-package serialization;
+package com.jinxlbj.easycache.serialization;
 
 /**
  * @author jinxLbj

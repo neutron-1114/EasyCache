@@ -1,9 +1,9 @@
-package core;
+package com.jinxlbj.easycache.core;
 
-import handler.CacheHandler;
-import handler.impl.LocalCacheHandler;
-import serialization.SerializationHandler;
-import serialization.impl.JavaSourceSerializationHandler;
+import com.jinxlbj.easycache.handler.CacheHandler;
+import com.jinxlbj.easycache.handler.impl.LocalCacheHandler;
+import com.jinxlbj.easycache.serialization.SerializationHandler;
+import com.jinxlbj.easycache.serialization.impl.JavaSourceSerializationHandler;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -31,7 +31,7 @@ public class EasyCacheContext {
             throw new RuntimeException(String.format("Namespace: %s has already existed...", namespace));
         }
         easyCacheMap.put(namespace, EasyCacheBuilder.buildEasyCache(cacheHandler, serializationHandler));
-        logger.info(String.format("[InitEasyCache] Namespace: %s, cache: %s, serialization: %s",
+        logger.info(String.format("[InitEasyCache] Namespace: %s, cache: %s, com.jinxlbj.easycache.serialization: %s",
                 namespace, cacheHandler.getClass().getName(), serializationHandler.getClass().getName()));
     }
 

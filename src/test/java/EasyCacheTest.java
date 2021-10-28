@@ -1,15 +1,9 @@
-import core.EasyCache;
-import core.EasyCacheContext;
-import handler.impl.RedisCacheHandler;
+import com.jinxlbj.easycache.core.EasyCache;
+import com.jinxlbj.easycache.handler.impl.RedisCacheHandler;
+import com.jinxlbj.easycache.core.EasyCacheContext;
 import model.TestA;
 import org.junit.Test;
-import serialization.impl.HessianSerializationHandler;
-
-/**
- * @author
- * @date 2021-10-26 21:39
- * @desc
- **/
+import com.jinxlbj.easycache.serialization.impl.HessianSerializationHandler;
 
 public class EasyCacheTest {
 

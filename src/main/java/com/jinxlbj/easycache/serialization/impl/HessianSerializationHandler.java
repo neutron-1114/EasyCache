@@ -1,8 +1,8 @@
-package serialization.impl;
+package com.jinxlbj.easycache.serialization.impl;
 
 import com.caucho.hessian.io.Hessian2Input;
 import com.caucho.hessian.io.Hessian2Output;
-import serialization.SerializationHandler;
+import com.jinxlbj.easycache.serialization.SerializationHandler;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

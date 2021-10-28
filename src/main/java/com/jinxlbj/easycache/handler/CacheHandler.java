@@ -1,4 +1,4 @@
-package handler;
+package com.jinxlbj.easycache.handler;
 
 /**
  * @author jinxLbj
