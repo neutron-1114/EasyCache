@@ -14,8 +14,6 @@ import com.jinxlbj.easycache.serialization.SerializationHandler;
  **/
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class EasyCache {
 
     private String namespace;
@@ -25,6 +23,15 @@ public class EasyCache {
     private SerializationHandler serializationHandler;
 
     private static int DEFAULT_TTL = 60 * 60;
+
+    protected EasyCache() {
+    }
+
+    protected EasyCache(String namespace, CacheHandler cacheHandler, SerializationHandler serializationHandler) {
+        this.namespace = namespace;
+        this.cacheHandler = cacheHandler;
+        this.serializationHandler = serializationHandler;
+    }
 
     String getNamespace() {
         return namespace;
