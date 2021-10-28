@@ -4,6 +4,7 @@
 * 1、把序列化和缓存工具解耦，可以随时自己定制
 * 2、随时使用，不需要过多的配置
 ```$xslt
+//本地缓存 + JAVA自带的序列化工具
 EasyCache easyCache = EasyCacheContext.getEasyCache();
 for (int i = 0; i < 100; i++) {
     String key = String.valueOf(i);
@@ -13,6 +14,7 @@ for (int i = 0; i < 100; i++) {
         System.out.println(ta.equals(tb));
     }
 }
+//REDIS缓存 + Hessian序列化工具
 EasyCacheContext.addEasyCache("cache-1", new RedisCacheHandler(), new HessianSerializationHandler());
 easyCache = EasyCacheContext.getEasyCache("cache-1");
 for (int i = 0; i < 100; i++) {
