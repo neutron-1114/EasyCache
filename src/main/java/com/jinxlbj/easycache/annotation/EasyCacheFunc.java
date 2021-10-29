@@ -1,5 +1,10 @@
 package com.jinxlbj.easycache.annotation;
 
+import java.lang.annotation.*;
+
+@Documented
+@Retention(RetentionPolicy.RUNTIME)
+@Target({ElementType.METHOD})
 public @interface EasyCacheFunc {
 
     String namespace() default "default";
